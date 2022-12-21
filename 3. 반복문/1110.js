@@ -1,4 +1,4 @@
-let N = require('fs').readFileSync(__dirname + '/textfile.txt').toString();
+let N = require('fs').readFileSync(0).toString();
 
 let sumN;
 let firstN = N;
