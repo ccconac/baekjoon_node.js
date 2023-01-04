@@ -1,4 +1,4 @@
-const input = require('fs').readFileSync(__dirname + '/textfile.txt').toString().split(' ');
+const input = require('fs').readFileSync(0).toString().split(' ');
 
 const [A, B, V] = [input[0], input[1], input[2]].map(Number);
 
