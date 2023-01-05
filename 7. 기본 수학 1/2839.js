@@ -1,16 +1,18 @@
-let input = require('fs').readFileSync(0).toString().trim();
+let N = require('fs').readFileSync(0).map(Number);
 
 let count = 0;
 
 while (true) {
-  if (input % 5 === 0) {
-    console.log(input / 5 + count);
-    break;
-  }  
-  if (0 > input) {
-    console.log(-1);
-    break;
-  }
-  count += 1;
-  input -= 3;
+    if (N % 5 === 0) {
+        console.log(N / 5 + count);
+        break;
+    }
+
+    if (N < 0) {
+        console.log(-1);
+        break;
+    }
+
+    N -= 3;
+    count += 1;
 }
