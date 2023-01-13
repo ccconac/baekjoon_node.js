@@ -7,8 +7,8 @@ for (let i = 1; i <= N; i++) {
     numbers.push(input[i]);
 }
 
-// 오름차순 정렬
-numbers = numbers.sort((a, b) => a - b);
+// 중앙값
+numbers.sort((a, b) => a - b);
 const median = numbers[Math.floor(N / 2)];
 
 // 평균
