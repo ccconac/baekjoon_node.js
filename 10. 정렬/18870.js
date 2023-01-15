@@ -14,8 +14,8 @@ for (let i = 0; i < N; i++) {
 }
 
 let result = '';
-input[0].split(' ').forEach((item, index) => {
-   result += `${map.get(+item)} `;
+input[0].split(' ').forEach((value, i) => {
+   result += `${map.get(+value)} `;
 })
 
 console.log(result);
